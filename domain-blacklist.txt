@@ -1,0 +1,2 @@
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x07737563 && 0x2c=0x6b646467 && 0x30=0x02636300" -j DROP -m comment --comment "DROP DNS Q suckddq.cc"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x076e6170 && 0x2c=0x6966756e && 0x30=0x03636f6d" -j DROP -m comment --comment "DROP DNS Q napifun.com"
