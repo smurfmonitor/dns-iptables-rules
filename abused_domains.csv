@@ -1,48 +1,44 @@
-.
-1rip.com
-1x1.cz
-2soe.ru
-edelion.su
-hizbullah.me
-anaheim.cz
-anonsc.com
-bfhmm.com
-biz
-bob.org
-cockblock.pw
-com
-d.directedat.asia
-dd0s.asia
-ddos.cat
-de
-directedat.asia
-disposableemailcheck.com
-doc.gov
-dongs.directedat.asia
-edelion.su
-f.directedat.asia
-fca.gov
-formality.directedat.asia
-fr
-hackwhatlol.cc
-hak4umz.net
-hizbullah.me
-ietf.org
-isc.org
-lineage2-game.ru
-lounge.pw
-mydnsscan.us
-net
-nukes.directedat.asia
-org
-packetdevil.com
-ripe.net
-scandns.tk
-sema.cz
-seznam.cz
-stellolstel.cc
-t4.deparel.com
-theswat.net
-txt.pwserver.com.ua
-us
-xcqv.de
+.; A,ANY
+1rip.com; ANY,A,RRSIG
+1x1.cz; TXT,ANY
+2soe.ru; A
+edelion.su; ANY,A
+hizbullah.me; ANY,A
+anaheim.cz; ANY
+anonsc.com; ANY
+bfhmm.com; AAAA,TXT
+biz; ANY
+cockblock.pw; ANY
+d.directedat.asia; ANY,A
+dd0s.asia; ANY,A
+ddos.cat; ANY
+directedat.asia; ANY
+disposableemailcheck.com; A
+doc.gov; ANY
+dongs.directedat.asia; ANY
+f.directedat.asia; A,ANY
+fca.gov; ANY,DNSKEY,DS,RRSIG
+formality.directedat.asia; ANY
+fr; ANY
+hackwhatlol.cc; ANY,A
+hak4umz.net; ANY,A
+hizbullah.me; ANY,A
+ietf.org; ANY,DS
+isc.org; ANY
+lineage2-game.ru; ANY,A
+lounge.pw; ANY
+mydnsscan.us; ANY,A
+nukes.directedat.asia; ANY,A
+org; DNSKEY
+packetdevil.com; ANY
+ripe.net; ANY
+scandns.tk; ANY
+sema.cz; ANY
+seznam.cz; ANY
+stellolstel.cc; A
+t4.deparel.com; TXT
+theswat.net; ANY,A
+txt.pwserver.com.ua; TXT
+xcqv.de; ANY, A
+srvit.org; ANY
+evgeniy-marchenko.cc; A
