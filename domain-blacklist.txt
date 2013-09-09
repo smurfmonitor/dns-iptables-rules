@@ -17,3 +17,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xffdfdfdf=0x035458
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x04494554 && 0x2c&0xDFFFDFDF=0x46034f52 && 0x30&0xDFFFFFFF=0x470000FF" -j DROP -m comment --comment "DROP DNS Q ANY ietf.org"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x03514841 && 0x2c&0xFFDFDFFF=0x02434300" -j DROP -m comment --comment "DROP DNS Q qha.cc"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFFF=0x064c4132 && 0x2c&0xDFDFDFFF=0x4c4f5702 && 0x30&0xDFDFFFFF=0x43430000" -j DROP -m comment --comment "DROP DNS Q la2low.cc"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x055a5a47 && 0x2c&0xDFDFFFDF=0x53540343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q zzgst.com"
