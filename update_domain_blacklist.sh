@@ -10,7 +10,7 @@ TARGET=DROP
 
 #see if chain exists, if not initialize
 if [ `iptables -L $IPCHAIN | wc -l` -lt 1 ]; then
-    echo 'adding chain $IPCHAIN'
+    echo "adding chain $IPCHAIN"
     iptables -N $IPCHAIN
     iptables -I INPUT -p udp --dport 53 -j $IPCHAIN
 fi
