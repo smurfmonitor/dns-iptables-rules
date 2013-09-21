@@ -23,3 +23,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFFFDF=0x01410b
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0758504c && 0x2c&0xDFDFDFDF=0x4f44494e && 0x30&0xFFDFDFDF=0x03434f4d" -j DROP -m comment --comment "DROP DNS Q xplodin.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFFF=0x02414106 && 0x2c&0xDFDFDFFF=0x41534433 && 0x30&0xDFDFFFDF=0x53430343 && 0x34&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q aa.asd3sc.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x09424954 && 0x2c&0xDFDFDFDF=0x53545245 && 0x30&0xDFDFDFDF=0x53530343 && 0x34&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q bitstress.com"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFFF=0x02414106 && 0x2c&0xDFDFDFDF=0x4d4d5441 && 0x30&0xDFFFFFDF=0x43310343 && 0x34&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q aa.mmtac1.com"
