@@ -6,6 +6,7 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03317831 && 0x2c=
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05626668 && 0x2c=0x6d6d0363 && 0x30=0x6f6d0000 && 0x34=0x10000100" -j DROP -m comment --comment "DROP DNS Q TXT bfhmm.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x1c=0x1d420100 && 0x28=0x03697363 && 0x2c=0x036f7267 && 0x30=0x0000ff00" -j DROP -m comment --comment "DROP DNS Q ANY isc.org dns.id 0x1d42"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x1c=0x2a390100 && 0x28=0x03697363 && 0x2c=0x036f7267 && 0x30=0x0000ff00" -j DROP -m comment --comment "DROP DNS Q ANY isc.org dns.id 0x2a39"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03697363 && 0x2c=0x036f7267 && 0x30=0x0000ff00" -j DROP -m comment --comment "DROP DNS Q ANY isc.org dns.id"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x07454445 && 0x2c&0xDFDFDFDF=0x4c494f4e && 0x30&0xFFDFDFFF=0x02535500" -j DROP -m comment --comment "DROP DNS Q edelion.su"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFFFDFDF=0x0432534f && 0x2c&0xDFFFDFDF=0x45025255" -j DROP -m comment --comment "DROP DNS Q 2soe.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x04524950 && 0x2c&0xDFFFDFDF=0x45034e45 && 0x30&0xDFFFFFFF=0x540000FF" -j DROP -m comment --comment "DROP DNS Q ANY ripe.net"
