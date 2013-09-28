@@ -29,4 +29,6 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0c4b49
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFFFFF=0x05443639 && 0x2c&0xFFFFFFDF=0x39310343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q d6991.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFFF=0x06414133 && 0x2c&0xFFFFFFFF=0x32343703 && 0x30&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q aa3247.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x08464b46 && 0x2c&0xDFDFDFDF=0x4b464b46 && 0x30&0xDFFFDFDF=0x4103434f" -j DROP -m comment --comment "DROP DNS Q fkfkfkfa.com"
-iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a475241 && 0x2c&0xDFDFDFDF=0x50505942 && 0x30&0xDFDFDFFF=0x4c4f4703 && 0x34&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q grappyblog.com 2"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a475241 && 0x2c&0xDFDFDFDF=0x50505942 && 0x30&0xDFDFDFFF=0x4c4f4703 && 0x34&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q grappyblog.com"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x05434d49 && 0x2c&0xDFDFFFDF=0x55490343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q cmiui.com"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFFFDFDF=0x05344657 && 0x2c&0xDFDFFFDF=0x484b0343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q 4fwhk.com"
