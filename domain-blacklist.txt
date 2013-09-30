@@ -33,3 +33,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a4752
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x05434d49 && 0x2c&0xDFDFFFDF=0x55490343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q cmiui.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFFFDFDF=0x05344657 && 0x2c&0xDFDFFFDF=0x484b0343 && 0x30&0xDFDFFFFF=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q 4fwhk.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0653414e && 0x2c&0xDFDFDFFF=0x44494103 && 0x30&0xDFDFDFFF=0x474f5600 && 0x34&0xFFFFFFFF=0x00ff0001" -j DROP -m comment --comment "DROP DNS Q ANY sandia.gov"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a5a4149 && 0x2c&0xDFDFDFDF=0x4b415041 && 0x30&0xDFDFDFFF=0x494b4103 && 0x34&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q zaikapaika.com"
