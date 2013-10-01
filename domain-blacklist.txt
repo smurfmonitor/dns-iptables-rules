@@ -36,3 +36,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x065341
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a5a4149 && 0x2c&0xDFDFDFDF=0x4b415041 && 0x30&0xDFDFDFFF=0x494b4103 && 0x34&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q zaikapaika.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x08564552 && 0x2c&0xDFDFDFDF=0x49534947 && 0x30&0xDFFFDFDF=0x4e03434f && 0x34&0xDFFFFFFF=0x4d0000ff" -j DROP -m comment --comment "DROP DNS Q ANY verisign.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0453454d && 0x2c&0xDFFFDFDF=0x4102435a && 0x30&0xFFFFFFDF=0x0000ff00" -j DROP -m comment --comment "DROP DNS Q ANY sema.cz"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x04504b54 && 0x2c&0xDFFFDFDF=0x53044153 && 0x30&0xDFDFFFFF=0x49410000" -j DROP -m comment --comment "DROP DNS Q ANY pkts.asia"
