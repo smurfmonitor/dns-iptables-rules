@@ -45,3 +45,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0d5355
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x06545854 && 0x2c=0x34303908 && 0x30&0xDFDFDFDF=0x54454b4a && 0x34&0xDFDFDFDF=0x45544f4e && 0x28&0xFFDFDFDF=0x03434f4d && 0x3c&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q txt409.tekjeton.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05333630 && 0x2c&0xFFFFFFDF=0x38380449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 36088.info"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFFF=0x02414105 && 0x2c=0x31303738 && 0x30&0xFFFFDFDF=0x3104494e && 0x34&0xDFDFFF00=0x464f0000" -j DROP -m comment --comment "DROP DNS Q aa.10781.info"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05333633 && 0x2c&0xFFFFFFDF=0x37320449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 36372.info"
