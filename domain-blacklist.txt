@@ -51,3 +51,6 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x064b52
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x04415a4d && 0x2c&0xDFFFDFDF=0x58025255 && 0x30&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q azmx.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x03545854 && 0x2c&0xFFDFDFDF=0x08465753 && 0x30&0xDFDFDFDF=0x45525645 && 0x34&0xDFFFDFDF=0x5203434f && 0x38&0xDFFFDFDF=0x4d025541 && 0x3c&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q txt.fwserver.com.ua"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0547544d && 0x2c&0xDFFFFFDF=0x4c320343 && 0x30&0xDFDFFF00=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q gtml2.com"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05343336 && 0x2c&0xFFFFFFDF=0x31340449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 43614.info"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05353331 && 0x2c&0xFFFFFFDF=0x39330449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 53193.info"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05363732 && 0x2c&0xFFFFFFDF=0x35320449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 67252.info"
