@@ -56,3 +56,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05353331 && 0x2c&
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x05363732 && 0x2c&0xFFFFFFDF=0x35320449 && 0x30&0xDFDFDFFF=0x4e464f00" -j DROP -m comment --comment "DROP DNS Q 67252.info"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0a524541 && 0x2c&0xDFDFDFDF=0x4e494d41 && 0x30&0xDFDFDFFF=0x544f5202 && 0x34&0xDFDFFF00=0x494e0000" -j DROP -m comment --comment "DROP DNS Q reanimator.in"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0>>22&0x3C@20&0xFFDFFFDF=0x01540450&&0>>22&0x3C@24&0xDFDFDFFF=0x42554204&&0>>22&0x3C@28&0xDFDFDFDF=0x494e464f&&0>>22&0x3C@32&0xFFFFFF00=0x0000FF00" -j DROP -m comment --comment "DROP DNS t.pbub.info ANY"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x044c4f4f && 0x2c&0xFFFFDFDF=0x31025255 && 0x30&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q loo1.ru"
