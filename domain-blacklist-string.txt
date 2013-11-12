@@ -59,3 +59,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 49 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 52 --algo bm --hex-string '|067369736b613103636f6d00|' -j DROP -m comment --comment "DROP DNS Q siska1.com"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 56 --algo bm --hex-string '|09686363666f72756d73026e6c0000ff|' -j DROP -m comment --comment "DROP DNS Q ANY hccforums.nl"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0B636865617473686172657a03636f6d00|' -j DROP -m comment --comment "DROP DNS Q cheatsharez.com"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0B636865617473686172657a03636f6d00|' -j DROP -m comment --comment "DROP DNS Q cheatsharez.com"
