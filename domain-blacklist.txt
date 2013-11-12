@@ -59,3 +59,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0>>22&0x3C@20&0xFFDFFFDF
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x044c4f4f && 0x2c&0xFFFFDFDF=0x31025255 && 0x30&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q loo1.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x06534953 && 0x2c&0xDFDFFFFF=0x4b413103 && 0x30&0xDFDFDFFF=0x434f4d00" -j DROP -m comment --comment "DROP DNS Q siska1.com"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x09484343 && 0x2c&0xDFDFDFDF=0x464f5255 && 0x30&0xDFDFFFDF=0x4d53024e && 0x34&0xDFFF00FF=0x4c0000ff" -j DROP -m comment --comment "DROP DNS Q ANY hccforums.nl"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x0b434845 && 0x2c&0xDFDFDFDF=0x41545348 && 0x30&0xDFDFDFDF=0x4152455a && 0x34&0xFFDFDFDF=0x03434f4d && 0x28&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q cheatsharez.com"
