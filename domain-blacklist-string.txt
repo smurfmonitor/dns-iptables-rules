@@ -62,4 +62,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 55 --algo bm --hex-string '|096c72632d706970656303636f6d00|' -j DROP -m comment --comment "DROP DNS Q lrc-pipec.com"
 iptables --insert INPUT -p udp --dport 53 -m string --from 42 --to 53 --algo bm --hex-string '|046d706e7004696e666f00|' -j DROP -m comment --comment "DROP DNS Q x.mpnp.info"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 76 --algo bm --hex-string '|1774686562657374646f6d61696e696e746865776f726c6407636c6f75646e7302657500|' -j DROP -m comment --comment "DROP DNS Q thebestdomainintheworld.cloudns.eu"
-iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 53 --algo bm --hex-string '|017804736c6e6d04696e666f00|' -j DROP -m comment --comment "DROP DNS Q x.slnm.info"
+iptables --insert INPUT -p udp --dport 53 -m string --from 42 --to 53 --algo bm --hex-string '|04736c6e6d04696e666f00|' -j DROP -m comment --comment "DROP DNS Q x.slnm.info"
