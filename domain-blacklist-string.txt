@@ -64,3 +64,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 42 --to 53 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 76 --algo bm --hex-string '|1774686562657374646f6d61696e696e746865776f726c6407636c6f75646e7302657500|' -j DROP -m comment --comment "DROP DNS Q thebestdomainintheworld.cloudns.eu"
 iptables --insert INPUT -p udp --dport 53 -m string --from 42 --to 53 --algo bm --hex-string '|04736c6e6d04696e666f00|' -j DROP -m comment --comment "DROP DNS Q x.slnm.info"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|02796d08726374726861736803636f6d00|' -j DROP -m comment --comment "DROP DNS Q ym.rctrhash.com"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 56 --algo bm --hex-string '|017808707269766574726303636f6d00|' -j DROP -m comment --comment "DROP DNS Q x.privetrc.com"
