@@ -70,3 +70,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 66 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 66 --algo bm --hex-string '|0b73 746f706472756773373703636f6d00|' -j DROP -m comment --comment "DROP DNS Q stopdrugs77.com"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 80 --algo bm --hex-string '|1A6e6f7474686562657374646f6d61696e696e746865776f726c6407636c6f75646e73036f726700|' -j DROP -m comment --comment "DROP DNS Q notthebestdomainintheworld.cloudns.org"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 52 --algo bm --hex-string '|066461726b7975036f726700|' -j DROP -m comment --comment "DROP DNS Q darkyu.org"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 58 --algo bm --hex-string '|0D6d61727573696161747461636b02707700|' -j DROP -m comment --comment "DROP DNS Q marusiaattack.pw"
