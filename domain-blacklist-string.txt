@@ -76,3 +76,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 68 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 52 --algo bm --hex-string '|0170046f70657203636f6d00|' -j DROP -m comment --comment "DROP DNS Q p.oper.com"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 54 --algo bm --hex-string '|09696c696e656167653202727500|' -j DROP -m comment --comment "DROP DNS Q ilineage2.ru"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 59 --algo bm --hex-string '|0E616472656e616c696e657373737302636300|' -j DROP -m comment --comment "DROP DNS Q adrenalinessss.cc"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 63 --algo bm --hex-string '|0964617462757267657207636c6f75646e73036f726700|' -j DROP -m comment --comment "DROP DNS Q datburger.cloudns.org"
