@@ -79,3 +79,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 59 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 63 --algo bm --hex-string '|0964617462757267657207636c6f75646e73036f726700|' -j DROP -m comment --comment "DROP DNS Q datburger.cloudns.org"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 49 --algo bm --hex-string '|046572686a02707700|' -j DROP -m comment --comment "DROP DNS Q erhj.pw"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 63 --algo bm --hex-string '|096772756e67796d616e07636c6f75646e73036f726700|' -j DROP -m comment --comment "DROP DNS Q grungyman.cloudns.org"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 49 --algo bm --hex-string '|0467686d6e02727500|' -j DROP -m comment --comment "DROP DNS Q ghmn.ru"
