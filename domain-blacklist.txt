@@ -85,3 +85,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x094752
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x03414d50 && 0x2c&0xFFDFDFDF=0x0a435241 && 0x30&0xDFDFFFDF=0x434b2d5a && 0x34&0xDFDFDFFF=0x4f4e4502 && 0x38&0xDFDFFF00=0x52550000" -j DROP -m comment --comment "DROP DNS Q amp.crack-zone.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x09534156 && 0x2c&0xDFDFDFDF=0x45524f41 && 0x30&0xDFDFFFDF=0x44530252 && 0x34&0xDFFF0000=0x55000000" -j DROP -m comment --comment "DROP DNS Q saveroads.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x03495249 && 0x2c&0xFFDFDFFF=0x02534f00" -j DROP -m comment --comment "DROP DNS Q iri.so"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x05504444 && 0x2c&0xDFDFFFDF=0x4f530343 && 0x30&0xDFDFFF00=0x4f4d0000" -j DROP -m comment --comment "DROP DNS Q pddos.com"
