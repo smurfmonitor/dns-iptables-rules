@@ -95,3 +95,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x054144
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x044b5646 && 0x2c&0xDFFFDFDF=0x4e025255 && 0x30&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q kvfn.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x07474552 && 0x2c&0xDFDFDFFF=0x44415233 && 0x30&0xFFDFDFFF=0x02525500" -j DROP -m comment --comment "DROP DNS Q gerdar3.ru"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x08464b46 && 0x2c&0xDFDFDFDF=0x4b464b46 && 0x30&0xDFFFDFDF=0x5203434f && 0x34&0xDFFF0000=0x4d000000" -j DROP -m comment --comment "DROP DNS Q fkfkfkfr.com"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28&0xFFDFDFDF=0x04445157 && 0x2c&0xDFFFDFDF=0x44025255 && 0x30&0xFF000000=0x00000000" -j DROP -m comment --comment "DROP DNS Q dqwd.ru"
