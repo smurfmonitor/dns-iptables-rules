@@ -34,7 +34,7 @@ iptables -A $IPCHAIN -j RETURN
 
 # get new rules from github, replace INPUT for IPCHAIN and DROP for TARGET and apply. 
 
-curl -s https://raw.github.com/smurfmonitor/dns-iptables-rules/master/domain-blacklist.txt | while read line; 
+curl -s -L https://raw.github.com/smurfmonitor/dns-iptables-rules/master/domain-blacklist.txt | while read line; 
 	do RULE=$(echo "$line" | sed -e "s/INPUT/$IPCHAIN/" -e "s/-j DROP/-j $TARGET/"); 
 		eval $RULE; 
 	done
