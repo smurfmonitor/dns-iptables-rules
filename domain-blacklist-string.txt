@@ -109,3 +109,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 59 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 54 --algo bm --hex-string '|06646f6c65746103676f760000ff|' -j DROP -m comment --comment "DROP DNS Q doleta.gov"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 56 --algo bm --hex-string '|096e6c686f7374696e67026e6c0000ff|' -j DROP -m comment --comment "DROP DNS Q nlhosting.nl"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 51 --algo bm --hex-string '|046f6767720272750000ff|' -j DROP -m comment --comment "DROP DNS Q oggr.ru"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0A646f6d656e616d6f637902706c0000ff|' -j DROP -m comment --comment "DROP DNS Q domenamocy.pl"
