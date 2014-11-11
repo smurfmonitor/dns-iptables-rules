@@ -127,3 +127,4 @@ iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03303637 && 0x2c&
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03303637 && 0x2c&0xFFDFDFFF=0x02435a00 && 0x30&0xFFFF0000=0x00FF0000" -j DROP -m comment --comment "DROP DNS Q 067.cz"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03303637 && 0x2c&0xFFDFDFFF=0x02435a00 && 0x30&0xFFFF0000=0x00FF0000" -j DROP -m comment --comment "DROP DNS Q 067.cz"
 iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03303637 && 0x2c&0xFFDFDFFF=0x02435a00 && 0x30&0xFFFF0000=0x00FF0000" -j DROP -m comment --comment "DROP DNS Q 067.cz"
+iptables --insert INPUT -p udp --dport 53 -m u32 --u32 "0x28=0x03303637 && 0x2c&0xFFDFDFFF=0x02435a00 && 0x30&0xFFFF0000=0x00FF0000" -j DROP -m comment --comment "DROP DNS Q 067.cz"
