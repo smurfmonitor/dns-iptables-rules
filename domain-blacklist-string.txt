@@ -111,5 +111,5 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 56 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 51 --algo bm --hex-string '|046f6767720272750000ff|' -j DROP -m comment --comment "DROP DNS Q oggr.ru"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0A646f6d656e616d6f637902706c0000ff|' -j DROP -m comment --comment "DROP DNS Q domenamocy.pl"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 50 --algo bm --hex-string '|0330363702637a0000ff|' -j DROP -m comment --comment "DROP DNS Q 067.cz"
-iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 52 --algo bm --hex-string '|077376697374323102637a00|' -j DROP -m comment --comment "DROP DNS Q svist21.cz"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 54 --algo bm --hex-string '|077376697374323102637a0000ff|' -j DROP -m comment --comment "DROP DNS Q svist21.cz"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0B66726565696e666f73797303636f6d00|' -j DROP -m comment --comment "DROP DNS Q freeinfosys.com"
