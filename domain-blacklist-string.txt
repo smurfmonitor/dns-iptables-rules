@@ -119,3 +119,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 67 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 55 --algo bm --hex-string '|066261736a756b03636f6d02727500|' -j DROP -m comment --comment "DROP DNS Q basjuk.com.ru"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 58 --algo bm --hex-string '|0970697a6461697a646103636f6d02727500|' -j DROP -m comment --comment "DROP DNS Q pizdaizda.com.ru"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 61 --algo bm --hex-string '|0F6d6178696d756d7374726573736572036e657400|' -j DROP -m comment --comment "DROP DNS Q maximumstresser.net"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 52 --algo bm --hex-string '|04766c6368036e65740000ff|' -j DROP -m comment --comment "DROP DNS Q vlch.net"
