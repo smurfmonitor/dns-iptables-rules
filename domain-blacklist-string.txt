@@ -128,3 +128,4 @@ iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 51 --algo bm 
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 51 --algo bm --hex-string '|06757a757a757502727500|' -j DROP -m comment --comment "DROP DNS Q uzuzuu.ru"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0A7669617265616c69747902637a0000ff|' -j DROP -m comment --comment "DROP DNS Q viareality.cz"
 iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0A7069646172617374696b0272750000ff|' -j DROP -m comment --comment "DROP DNS Q pidarastik.ru"
+iptables --insert INPUT -p udp --dport 53 -m string --from 40 --to 57 --algo bm --hex-string '|0963646e6d79686f737403636f6d0000ff|' -j DROP -m comment --comment "DROP DNS Q cdnmyhost.com"
